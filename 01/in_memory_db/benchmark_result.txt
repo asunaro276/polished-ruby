@@ -1,0 +1,29 @@
+=== Benchmark Report ===
+Data size: 1000 items
+
+--- Construction Time ---
+                           user     system      total        real
+Impl 1 (Hybrid Hash)   0.000410   0.000369   0.000779 (  0.000775)
+Impl 2 (Nested Hash)   0.000158   0.000143   0.000301 (  0.000306)
+Impl 3 (Array Opt)     0.000149   0.000134   0.000283 (  0.000287)
+
+--- Verification ---
+Impl 1 (Hybrid Hash): OK
+Impl 2 (Nested Hash): OK
+Impl 3 (Array Opt) : OK
+
+--- Lookup Time (Album) ---
+
+--- Lookup Time (Track) ---
+                           user     system      total        real
+Impl 1 (Hybrid Hash)   0.002072   0.000000   0.002072 (  0.002104)
+Impl 2 (Nested Hash)   0.032612   0.000000   0.032612 (  0.033012)
+Impl 3 (Array Opt)     0.001237   0.000000   0.001237 (  0.001249)
+Impl 1 (Hybrid Hash)   0.005355   0.000000   0.005355 (  0.005405)
+Impl 2 (Nested Hash)   0.001564   0.000000   0.001564 (  0.001580)
+Impl 3 (Array Opt)     0.001430   0.000000   0.001430 (  0.001444)
+
+--- Memory Estimate (Rough) ---
+Impl 1 (Hybrid Hash): ~129.26 KB (Delta)
+Impl 2 (Nested Hash): ~-33.66 KB (Delta)
+Impl 3 (Array Opt) : ~-26.6 KB (Delta)
